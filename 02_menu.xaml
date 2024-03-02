@@ -7,7 +7,7 @@
         xmlns:vista="clr-namespace:FINAL_PROYECTO.Vistas"
         mc:Ignorable="d"
         Title="_02_menu" 
-               Height="550"
+        Height="550"
         Width="1000"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -18,12 +18,10 @@
 
 
     <Window.Resources>
-
         <DataTemplate x:Name="Inicio"
               DataType= "{x:Type vista:Inicio}">
-        <vista:Inicio DataContext ="{Binding}"/>
+              <vista:Inicio DataContext ="{Binding}"/>
         </DataTemplate>
-
     </Window.Resources>
 
 
@@ -107,7 +105,7 @@
                     Margin="0,108,0,0"
                     VerticalAlignment="Top"
                     Width="164"
-                    Click="b_gestionar_Click"
+                    Click="b_inicio_Click"
                     Cursor="Hand"
                     Foreground="White"
 >

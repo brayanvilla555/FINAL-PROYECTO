@@ -24,9 +24,14 @@ namespace FINAL_PROYECTO
             InitializeComponent();
         }
 
+        private void b_inicio_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Vistas.Inicio();
+
+        }
+
         private void b_gestionar_Click(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void b_prestamos_Click(object sender, RoutedEventArgs e)
@@ -36,7 +41,12 @@ namespace FINAL_PROYECTO
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            
+            Application.Current.Shutdown();
+        }
+
+        private void Windows_mouseDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
