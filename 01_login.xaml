@@ -1,0 +1,18 @@
+﻿<Window x:Class="FINAL_PROYECTO._01_login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FINAL_PROYECTO"
+        mc:Ignorable="d"
+        Title="_01_login" Height="450" Width="800">
+    <Grid>
+        <Label Content="Correo:" HorizontalAlignment="Left" Height="28" Margin="265,130,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox x:Name="tb_correo" HorizontalAlignment="Left" Height="26" Margin="265,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Text="ayoelfernandezs@gmail.com"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Height="28" Margin="265,205,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox x:Name="tb_contrasena" HorizontalAlignment="Left" Height="26" Margin="265,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Text="yelofernandez"/>
+        <Label Content="INICIO DE SESIÓN:" HorizontalAlignment="Left" Height="45" Margin="286,85,0,0" VerticalAlignment="Top" Width="188" FontSize="18"/>
+        <Button x:Name="b_iniciar" Content="INICIAR" HorizontalAlignment="Left" Height="35" Margin="307,302,0,0" VerticalAlignment="Top" Width="144" Click="b_iniciar_Click"/>
+
+    </Grid>
+</Window>
