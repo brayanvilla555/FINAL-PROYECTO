@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Border CornerRadius="0,0,10,0"
-     Background="AliceBlue">
+            Background="#e0f1fe">
         <Grid>
             <ListView HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="550" Margin="0,85,0,0">
                 <ListView.View>

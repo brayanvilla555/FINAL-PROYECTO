@@ -29,15 +29,17 @@ namespace FINAL_PROYECTO
             DataContext = new Vistas.Inicio();
 
         }
-
-        private void b_gestionar_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
         private void b_prestamos_Click(object sender, RoutedEventArgs e)
         {
+            DataContext = new Vistas.Prestamos();
 
         }
+        private void b_gestionar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
@@ -46,7 +48,8 @@ namespace FINAL_PROYECTO
 
         private void Windows_mouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
         }
     }
 }
