@@ -20,7 +20,7 @@
     <Window.Resources>
         <DataTemplate x:Name="Inicio"
               DataType= "{x:Type vista:Inicio}">
-              <vista:Inicio DataContext ="{Binding}"/>
+            <vista:Inicio DataContext ="{Binding}"/>
         </DataTemplate>
 
         <DataTemplate x:Name="Prestamos"
@@ -34,7 +34,6 @@
         CornerRadius="10">
 
         <Grid x:Name="Principal">
-
             <Grid x:Name="Header" 
               Height="37"
               VerticalAlignment="Top"
@@ -42,14 +41,47 @@
 
                 <Border CornerRadius="10,10,0,0"
                     Background="#87cefa"/>
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
-                        <ColumnDefinition Width ="35"/>
-                        <ColumnDefinition Width ="35"/>
+                        <ColumnDefinition Width ="30"/>
+                        <ColumnDefinition Width ="30"/>
                     </Grid.ColumnDefinitions>
+                    <Button x:Name="btnMinimize"                           
+                            BorderThickness="0"
+                            Content="-"
+                            Foreground="White"
+                            FontSize="16"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimize_Click">
 
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#03045e"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#278BEF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
 
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">          
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+                    
                     <Button x:Name="btnClose"                          
                         BorderThickness="0"
                         Content="X"
@@ -87,27 +119,27 @@
 
             </Grid>
 
-            <Grid x:Name="BarraMenu"
-              Width="172"
-              Height="515"
-              HorizontalAlignment="Left"
-              Background="Transparent"
-              VerticalAlignment="Bottom">
-
                 <Border CornerRadius="0,0,0,10"
-                    Background="#b0e0e6"/>
-                <Label Content="Biblioteca UNC"
-                       HorizontalAlignment="Center"
+                    Margin="0,35,0,0"
+                    Background="#b0e0e6">
+                    <Grid x:Name="BarraMenu"
+                  HorizontalAlignment="Left"
+                  Background="Transparent" Width="193">
+
+
+
+                        <Label Content="Biblioteca UNC"
+                       HorizontalAlignment="Left"
                        Height="24" VerticalAlignment="Top"
                        Width="110"
                        FontSize="12"
-                       FontWeight="Bold" Margin="0,30,0,0"/>
+                       FontWeight="Bold" Margin="40,68,0,0"/>
 
-                <Button x:Name="b_inicio"
+                        <Button x:Name="b_inicio"
                     Content="INICIO"
                     HorizontalAlignment="Center"
                     Height="36"
-                    Margin="0,108,0,0"
+                    Margin="0,176,0,0"
                     VerticalAlignment="Top"
                     Width="160"
                     Click="b_inicio_Click"
@@ -115,38 +147,38 @@
                     Foreground="White"
 >
 
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background"
-                                    Value="#87ceeb"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver"
-                                         Value="True">
+                            <Button.Style>
+                                <Style TargetType="Button">
                                     <Setter Property="Background"
+                                    Value="#87ceeb"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                            <Setter Property="Background"
                                             Value="#0077b6"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
 
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="9"
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="9"
                                     Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
+                                        <ContentPresenter VerticalAlignment="Center"
                                                   HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
 
 
 
-                <Button x:Name="b_prestamos"
+                        <Button x:Name="b_prestamos"
                         Content="PRESTAMOS"
                         HorizontalAlignment="Center"
                         Height="36"
-                        Margin="0,208,0,0"
+                        Margin="0,292,0,0"
                         VerticalAlignment="Top"
                         Width="160"
                         Click="b_prestamos_Click"
@@ -154,36 +186,36 @@
                         Foreground="White"
     >
 
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#5f9ea0"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#0077b6"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#5f9ea0"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#0077b6"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
 
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="9"
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="9"
                                     Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
+                                        <ContentPresenter VerticalAlignment="Center"
                                                   HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
 
 
 
 
-                <Button x:Name="b_gestionar"
+                        <Button x:Name="b_gestionar"
                     Content="GESTIONAR"
                     HorizontalAlignment="Center"
                     Height="36"
-                    Margin="0,308,0,0"
+                    Margin="0,396,0,0"
                     VerticalAlignment="Top"
                     Width="160"
                     Click="b_gestionar_Click"
@@ -191,44 +223,45 @@
                     Foreground="White"
 >
 
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background"
-                                    Value="#87ceeb"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver"
-                                         Value="True">
+                            <Button.Style>
+                                <Style TargetType="Button">
                                     <Setter Property="Background"
+                                    Value="#87ceeb"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                            <Setter Property="Background"
                                             Value="#0077b6"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
 
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border CornerRadius="9"
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="9"
                                     Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
+                                        <ContentPresenter VerticalAlignment="Center"
                                                   HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-            </Grid>
-
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Border>
 
             <Grid x:Name="Contenido"
               Background="Transparent"
-              Width="830"
-              Height="515"
-              VerticalAlignment="Bottom"
-              HorizontalAlignment="Right">
+              Margin="190,35,0,0"
+              >
 
                 <Border CornerRadius="0,0,10,0"
                     Background="#e0f1fe"/>
 
-                <ContentControl Content="{Binding}"/>
+                <ContentControl x:Name="contentControl"
+                                Content="{Binding}"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"/>
 
             </Grid>
 

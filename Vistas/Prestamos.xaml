@@ -5,27 +5,32 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FINAL_PROYECTO.Vistas"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#e0f1fe">
-        <Label Content="Codigo Estudiane:"
+             d:DesignHeight="515"
+             d:DesignWidth="810">
+    
+    
+    <Border CornerRadius="0,0,10,0"
+            Background="#e0f1fe">
+        <Grid>
+            <Label Content="Codigo Estudiane:"
                HorizontalAlignment="Left"
-               Margin="146,67,0,0"
-               VerticalAlignment="Top"
-               Background="AntiqueWhite"
-               />
-        <TextBox HorizontalAlignment="Left"
-                 Height="26" Margin="257,67,0,0"
+               VerticalAlignment="Top"/>
+            
+            <TextBox HorizontalAlignment="Left"
+                 Height="26"
+                 Margin="257,67,0,0"
                  TextWrapping="Wrap"
                  Text="Buscar"
                  VerticalAlignment="Top"
                  Width="236"/>
 
-        <Grid x:Name="tablaPrestamos"
+            <Grid x:Name="tablaPrestamos"
               Width="300"
               Height="200"
-              Background="Aquamarine">
-            
-        </Grid>
+              Background="Aquamarine" Margin="375,258,135,57">
 
-    </Grid>
+            </Grid>
+
+        </Grid>
+    </Border>
 </UserControl>
