@@ -63,5 +63,17 @@ namespace FINAL_PROYECTO
             DataContext = new Vistas.RegistrarLibro();
 
         }
+
+        private void b_agrandar_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = WindowState.Maximized;
+            }
+        }
     }
 }

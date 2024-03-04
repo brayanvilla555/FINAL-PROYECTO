@@ -54,6 +54,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition Width ="30"/>
                         <ColumnDefinition Width ="30"/>
+                        <ColumnDefinition Width ="30"/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Biblioteca de la Universidad Nacional de Cajamarca"
                              FontFamily="Montserrat"
@@ -106,7 +107,8 @@
                         FontSize="12"
                         FontFamily="Montserrat"
                         Cursor="Hand"
-                        Grid.Column="2" Click="btnClose_Click"
+                        Grid.Column="3"
+                        Click="btnClose_Click"
                         >
 
                         <Button.Style>
@@ -127,6 +129,39 @@
                                     Background="{TemplateBinding Background}">
                                     <ContentPresenter VerticalAlignment="Center"
                                                   HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="b_agrandar"                          
+                            BorderThickness="0"
+                            Content="❐"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="2" Click="b_agrandar_Click"
+    >
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#03045e"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#0077b6"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                CornerRadius="9"
+                Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                              HorizontalAlignment="Center"/>
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
