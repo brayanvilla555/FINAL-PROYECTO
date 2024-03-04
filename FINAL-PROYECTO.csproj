@@ -61,8 +61,14 @@
     <Compile Include="Vistas\Inicio.xaml.cs">
       <DependentUpon>Inicio.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\ListaLibros.xaml.cs">
+      <DependentUpon>ListaLibros.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Prestamos.xaml.cs">
       <DependentUpon>Prestamos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RegistrarLibro.xaml.cs">
+      <DependentUpon>RegistrarLibro.xaml</DependentUpon>
     </Compile>
     <Page Include="01_login.xaml">
       <SubType>Designer</SubType>
@@ -92,7 +98,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Vistas\ListaLibros.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Vistas\Prestamos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\RegistrarLibro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\UNC-60ANOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\biblioteca.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
