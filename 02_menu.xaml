@@ -27,6 +27,11 @@
                       DataType= "{x:Type vista:Prestamos}">
             <vista:Prestamos DataContext ="{Binding}"/>
         </DataTemplate>
+
+        <DataTemplate x:Name="Registrar"
+                      DataType="{x:Type vista:RegistrarLibro}">
+            <vista:RegistrarLibro DataContext="{Binding}"/>
+        </DataTemplate>
     </Window.Resources>
 
 
@@ -40,7 +45,7 @@
               VerticalAlignment="Top"
               Background="Transparent">
 
-                
+
                 <Border CornerRadius="10,10,0,0"
                     Background="#87cefa"/>
 
@@ -57,9 +62,9 @@
                            HorizontalContentAlignment="Center"
                            FontSize="15"
                            FontWeight="Bold"
-                           >    
+                           >
                     </Label>
-                    
+
                     <Button x:Name="btnMinimize"                           
                             BorderThickness="0"
                             Content="-"
@@ -144,7 +149,7 @@
                         <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
-
+                        <RowDefinition />
                     </Grid.RowDefinitions>
 
                     <Image Source="/Imagenes/UNC-60ANOS.png"
@@ -228,13 +233,13 @@
 
 
 
-                    <Button x:Name="b_gestionar"
-                                Content="GESTIONAR"
+                    <Button x:Name="b_lista_libros"
+                                Content="LIBROS"
                                 HorizontalAlignment="Center"
                                 Height="36"
                                 VerticalAlignment="Center"
                                 Width="160"
-                                Click="b_gestionar_Click"
+                                Click="b_lista_libros_Click"
                                 Cursor="Hand"
                                 Foreground="White" Grid.Row="3"
 >
@@ -263,8 +268,46 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <Button x:Name="b_registrar"
+                                Content="REGISTRAR"
+                                HorizontalAlignment="Center"
+                                Height="36"
+                                VerticalAlignment="Center"
+                                Width="160"
+                                Click="b_registrar_Click"
+                                Cursor="Hand"
+                                Foreground="White"
+                                Grid.Row="4">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background"
+                                    Value="#87ceeb"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver"
+                                         Value="True">
+                                        <Setter Property="Background"
+                                            Value="#0077b6"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button> 
                 </Grid>
             </Border>
+
+
+            
 
             <Grid x:Name="Contenido"
               Background="Transparent"
@@ -275,9 +318,8 @@
                     Background="#e0f1fe"/>
 
                 <ContentControl x:Name="contentControl"
-                                Content="{Binding}"
-                                HorizontalAlignment="Stretch"
-                                VerticalAlignment="Stretch"/>
+                                Content="{Binding}"/>
+
 
             </Grid>
 

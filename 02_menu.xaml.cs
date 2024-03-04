@@ -34,12 +34,6 @@ namespace FINAL_PROYECTO
             DataContext = new Vistas.Prestamos();
 
         }
-        private void b_gestionar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
@@ -55,6 +49,18 @@ namespace FINAL_PROYECTO
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
+
+        }
+
+
+        private void b_lista_libros_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Vistas.ListaLibros();
+        }
+
+        private void b_registrar_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Vistas.RegistrarLibro();
 
         }
     }
