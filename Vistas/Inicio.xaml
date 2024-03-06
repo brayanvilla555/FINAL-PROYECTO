@@ -7,17 +7,40 @@
              mc:Ignorable="d" 
              d:DesignHeight="515"
              d:DesignWidth="810">
-    
-        <Border CornerRadius="0,0,10,0"
+
+    <Border CornerRadius="0,0,10,0"
             Background="#e0f1fe">
-            <Grid>
-                <Button Height="30"
-                        Width="30">
-                    
-                </Button>
+        <Grid>
+            <Button Height="30"
+                        Width="30" Margin="0,10,780,475">
+
+            </Button>
             <Button Height="30"
                     Width="30" Margin="770,475,10,10"/>
+            <ListView HorizontalAlignment="Left" Height="183" Margin="15,144,0,0" VerticalAlignment="Top" Width="483" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Num" DisplayMemberBinding="{Binding Num}" Width="100"/>
+                        <GridViewColumn Header="Codigo" DisplayMemberBinding="{Binding Codigo}" Width="100"/>
+                        <GridViewColumn Header="Apellido" DisplayMemberBinding="{Binding Apellido}" Width="100"/>
+                        <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding Nombre}" Width="100"/>
+                        <GridViewColumn Header="Estado" DisplayMemberBinding="{Binding Estado}" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox x:Name="tb_buscarEstudiant" HorizontalAlignment="Left" Height="26" Margin="25,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329"/>
+            <Label Content="Codigo de Estudiante:" HorizontalAlignment="Left" Height="37" Margin="25,68,0,0" VerticalAlignment="Top" Width="160"/>
+            <Label Content="Estudiante:" HorizontalAlignment="Left" Height="24" Margin="524,83,0,0" VerticalAlignment="Top" Width="70"/>
+            <Label Content="Codigo: " HorizontalAlignment="Left" Height="29" Margin="542,120,0,0" VerticalAlignment="Top" Width="52"/>
+            <Label Content="Estado" HorizontalAlignment="Left" Height="30" Margin="547,159,0,0" VerticalAlignment="Top" Width="52"/>
+            <TextBox x:Name="tb_estudiante" HorizontalAlignment="Left" Height="26" Margin="599,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+            <TextBox x:Name="tb_codigoEstudi" HorizontalAlignment="Left" Height="26" Margin="599,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" RenderTransformOrigin="0.546,-0.346"/>
+            <TextBox x:Name="tb_EstadoE" HorizontalAlignment="Left" Height="26" Margin="599,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+            <Button x:Name="btn_selectLibr" Content="Seleccionar Libros" HorizontalAlignment="Left" Height="40" Margin="573,388,0,0" VerticalAlignment="Top" Width="186"/>
+            <Label Content="Prestamo de libros" HorizontalAlignment="Left" Height="37" Margin="274,10,0,0" VerticalAlignment="Top" Width="160"/>
+            <Button x:Name="btn_agregarEs" Content="Agregar" HorizontalAlignment="Left" Height="40" Margin="59,383,0,0" VerticalAlignment="Top" Width="92"/>
+            <Button x:Name="btn_editar" Content="Editar" HorizontalAlignment="Left" Height="40" Margin="190,383,0,0" VerticalAlignment="Top" Width="80"/>
         </Grid>
 
-        </Border>
+    </Border>
 </UserControl>
