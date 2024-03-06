@@ -38,8 +38,9 @@
             <TextBox x:Name="tb_EstadoE" HorizontalAlignment="Left" Height="26" Margin="599,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
             <Button x:Name="btn_selectLibr" Content="Seleccionar Libros" HorizontalAlignment="Left" Height="40" Margin="573,388,0,0" VerticalAlignment="Top" Width="186"/>
             <Label Content="Prestamo de libros" HorizontalAlignment="Left" Height="37" Margin="274,10,0,0" VerticalAlignment="Top" Width="160"/>
-            <Button x:Name="btn_agregarEs" Content="Agregar" HorizontalAlignment="Left" Height="40" Margin="59,383,0,0" VerticalAlignment="Top" Width="92"/>
-            <Button x:Name="btn_editar" Content="Editar" HorizontalAlignment="Left" Height="40" Margin="190,383,0,0" VerticalAlignment="Top" Width="80"/>
+            <Button x:Name="btn_agregarEs" Content="Agregar" HorizontalAlignment="Left" Height="40" Margin="444,383,0,0" VerticalAlignment="Top" Width="92"/>
+            <Button x:Name="btn_editar" Content="Editar" HorizontalAlignment="Left" Height="40" Margin="164,368,0,0" VerticalAlignment="Top" Width="80"/>
+            <Button x:Name="btn_editar_Copiar" Content="Buscar" HorizontalAlignment="Center" Height="36" Margin="0,97,0,0" VerticalAlignment="Top" Width="58"/>
         </Grid>
 
     </Border>
