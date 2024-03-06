@@ -11,11 +11,11 @@
 
         <ComboBox HorizontalAlignment="Left" Height="33" Margin="41,65,0,0" VerticalAlignment="Top" Width="194" FontSize="14"/>
         <Label Content="Seleccione Categoría:" HorizontalAlignment="Left" Height="26" Margin="41,31,0,0" VerticalAlignment="Top" Width="155" FontSize="14" FontWeight="Bold"/>
-        <DataGrid HorizontalAlignment="Left" Height="126" Margin="268,83,0,0"Margin="268,97,0,0" VerticalAlignment="Top" Width="509" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <DataGrid HorizontalAlignment="Left" Height="126" Margin="268,241,0,0"Margin="268,257,0,0" VerticalAlignment="Top" Width="509" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="358,35,0,0"Margin="358,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
-        <Image HorizontalAlignment="Left" Height="30" Margin="662,35,0,0"Margin="662,49,0,0" VerticalAlignment="Top" Width="38" Source="https://imgs.search.brave.com/pZtQOLMR1fq-L9X-ayp2cspOeo7kMspLdDBbNgc8LhU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni83NTEvNzUxNDYz/LnBuZw"/>
-        <Button Content="LIMPIAR" HorizontalAlignment="Left" Height="26" Margin="512,388,0,0"Margin="514,396,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.5,0.5">
+        <DataGrid HorizontalAlignment="Left" Height="126" Margin="268,83,0,0" VerticalAlignment="Top" Width="509" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid HorizontalAlignment="Left" Height="126" Margin="268,241,0,0" VerticalAlignment="Top" Width="509" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="358,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="662,35,0,0" VerticalAlignment="Top" Width="38" Source="https://imgs.search.brave.com/pZtQOLMR1fq-L9X-ayp2cspOeo7kMspLdDBbNgc8LhU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni83NTEvNzUxNDYz/LnBuZw"/>
+        <Button Content="LIMPIAR" HorizontalAlignment="Left" Height="26" Margin="514,396,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -25,8 +25,8 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="PRESTAR" HorizontalAlignment="Left" Height="26" Margin="649,388,0,0"Margin="649,396,0,0" VerticalAlignment="Top" Width="92"/>
-        <Label Content="Seleccionar libros a prestar" HorizontalAlignment="Left" Height="35" Margin="324,9,0,0"Margin="324,3,0,0" VerticalAlignment="Top" Width="264" FontSize="18" FontWeight="Bold"/>
+        <Button Content="PRESTAR" HorizontalAlignment="Left" Height="26" Margin="649,388,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label Content="Seleccionar libros a prestar" HorizontalAlignment="Left" Height="35" Margin="324,3,0,0" VerticalAlignment="Top" Width="264" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

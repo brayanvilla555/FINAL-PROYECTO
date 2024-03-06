@@ -58,6 +58,8 @@
     <Compile Include="02_menu.xaml.cs">
       <DependentUpon>02_menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\Libro.cs" />
+    <Compile Include="Negocio\LibroDao.cs" />
     <Compile Include="Vistas\Inicio.xaml.cs">
       <DependentUpon>Inicio.xaml</DependentUpon>
     </Compile>
