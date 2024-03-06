@@ -18,7 +18,7 @@ namespace FINAL_PROYECTO.Vistas
     /// <summary>
     /// Lógica de interacción para Prestar.xaml
     /// </summary>
-    public partial class Prestar : Page
+    public partial class Prestar : UserControl
     {
         public Prestar()
         {
