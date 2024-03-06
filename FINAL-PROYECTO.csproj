@@ -67,6 +67,9 @@
     <Compile Include="Vistas\Prestamos.xaml.cs">
       <DependentUpon>Prestamos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Prestar.xaml.cs">
+      <DependentUpon>Prestar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\RegistrarLibro.xaml.cs">
       <DependentUpon>RegistrarLibro.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Vistas\Prestamos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Prestar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
